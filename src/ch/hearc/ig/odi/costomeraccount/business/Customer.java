@@ -1,6 +1,5 @@
 package ch.hearc.ig.odi.costomeraccount.business;
 
-import java.text.ParseException;
 import java.util.*;
 
 public class Customer {
@@ -42,9 +41,9 @@ public class Customer {
         this.accounts.put(number, acc);
     }
     
+    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-
         sb.append("Customer N°");
         sb.append(this.number);
         sb.append("\n");
@@ -58,8 +57,6 @@ public class Customer {
             sb.append(acc.accToString());
         }        
         sb.append("\n");
-        
-
         return sb.toString();
     }
 

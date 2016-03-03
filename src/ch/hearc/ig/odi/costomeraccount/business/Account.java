@@ -1,6 +1,5 @@
 package ch.hearc.ig.odi.costomeraccount.business;
 
-
 public class Account {
 
     private Customer customer;
@@ -61,8 +60,7 @@ public class Account {
     }
     
     public String accToString() {
-        StringBuilder sb = new StringBuilder();
-        
+        StringBuilder sb = new StringBuilder();        
         sb.append("\n");
         sb.append("Account N°");
         sb.append(this.number);
@@ -71,7 +69,6 @@ public class Account {
         sb.append(this.name);
         sb.append("    Solde: ");
         sb.append(this.balance);
-
         return sb.toString();
     }
 

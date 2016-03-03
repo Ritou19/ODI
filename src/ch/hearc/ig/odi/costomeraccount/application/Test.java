@@ -36,8 +36,6 @@ public class Test {
         System.out.println("5");
         Account.transfert(7.9, ac1, ac2);
         System.out.println(firstCust.toString());
-        
-        
     }
     
 }
