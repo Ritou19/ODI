@@ -30,7 +30,7 @@ public class Bank {
     
     public void addCustomer(int number, String fn, String ln) {
         Customer customer = new Customer(number, fn, ln);
-        customers.put(number, Customer);   
+        customers.put(number, customer);   
     }
     
     public void addAccount(String number, String name, double rate, Customer customer) {
